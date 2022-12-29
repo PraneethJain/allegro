@@ -2,7 +2,7 @@
 #include <math.h>
 #include "allegro.h"
 
-const float del_theta = 0.3;
+const float del_theta = 0.4;
 const float del_g = 0.1;
 const float length_factor = 0.8;
 const float thickness_factor = 0.9;
@@ -21,7 +21,7 @@ void draw_line(int x, int y, float length, float angle, float thickness, float g
 
 void rec_drawing()
 {
-    draw_line(WIDTH / 2, HEIGHT, 125, 0, 5, 0);
+    draw_line(WIDTH / 2, HEIGHT, 150, 0, 5, 0);
 }
 
 int main()
