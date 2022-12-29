@@ -16,12 +16,12 @@ void draw_line(int x, int y, float length, float angle, float thickness, float g
     al_draw_line(x, y, end_x, end_y, al_map_rgb_f(0, g, 0), thickness);
     draw_line(end_x, end_y, length * length_factor, angle + del_theta, thickness * thickness_factor, g + del_g);
     draw_line(end_x, end_y, length * length_factor, angle - del_theta, thickness * thickness_factor, g + del_g);
+    al_flip_display();
 }
 
 void rec_drawing()
 {
     draw_line(WIDTH / 2, HEIGHT, 125, 0, 5, 0);
-    al_flip_display();
 }
 
 int main()
