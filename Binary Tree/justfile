@@ -1,0 +1,13 @@
+set shell := ["powershell.exe", "-c"]
+
+alias r := build_run
+
+build:
+    gcc tree.c allegro.c -o tree.exe -lallegro -lallegro_primitives -lm
+
+run:
+    ./tree
+
+build_run:
+    gcc tree.c allegro.c -o tree.exe -lallegro -lallegro_primitives -lm
+    ./tree
