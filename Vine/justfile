@@ -1,0 +1,13 @@
+set shell := ["powershell.exe", "-c"]
+
+alias r := build_run
+
+build:
+    gcc vine.c allegro.c -o vine.exe -lallegro -lallegro_primitives -lm
+
+run:
+    ./vine
+
+build_run:
+    gcc vine.c allegro.c -o vine.exe -lallegro -lallegro_primitives -lm
+    ./vine
