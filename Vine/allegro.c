@@ -29,7 +29,7 @@ void allegro_init()
     must_init(al_init_primitives_addon(), "primitives");
 
     al_register_event_source(queue, al_get_display_event_source(disp));
-    al_clear_to_color(al_map_rgb(255, 255, 255));
+    al_clear_to_color(al_map_rgb(0, 0, 0));
     al_set_window_title(disp, "Vine");
 }
 
